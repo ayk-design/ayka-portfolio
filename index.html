@@ -22,10 +22,10 @@
 
     <nav>
       <ul>
-        <li><a href="index.html">HOME</a></li>
+        <li><a href="portfolio.html">HOME</a></li>
         <li><a href="#works">WORKS</a></li>
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="mailto:anuka1022@gmail.com">CONTACT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
 
@@ -60,7 +60,7 @@
       <h2>Works</h2>
     </div>
 
-    <div class="works-grid">
+<div class="works-grid">
 
       <div class="work-card">
         <img src="ネイルサロン.jpg">
@@ -82,7 +82,7 @@
         <img src="韓国コスメ.jpg">
 <div class="work-card-content work-card-marble">
           <h3>Popupショップ</h3>
-          <p>トレース作品です。</p>
+          <p>バナートレース作品です。</p>
         </div>
       </div>
 
@@ -95,24 +95,66 @@
       </div>
 
        <div class="work-card">
-        <img src="aomori.jpg">
+        <img src="Famm.jpg">
         <div class="work-card-content work-card-marble">
-          <h3>青森旅行</h3>
-          <p>バナー制作</p>
+          <h3>Famm様広告用バナー</h3>
+          <p>クライアント様の要望に沿って制作しました。</p>
         </div>
       </div>
 
        <div class="work-card">
-        <img src="母の日.jpg">
+        <img src="famm4.jpg">
 <div class="work-card-content work-card-marble">
-          <h3>母の日広告</h3>
-          <p>バナー制作</p>
+          <h3>Famm様広告用バナー</h3>
+          <p>クライアント様の要望に沿って制作しました。</p>
         </div>
       </div>
 
+</div><!-- バナー一覧の終わり -->
+
+<div class="website-list">
+
+
+      <div class="work-card school-work">
+
+  <div class="school-preview">
+
+  <div class="silver-laptop">
+    <div class="laptop-screen">
+      <img src="images/school-pc.png"
+           alt="SAMPLE SCHOOL パソコン版">
     </div>
 
-    <div class="works-footer">
+    <div class="laptop-keyboard">
+      <div class="keyboard-keys"></div>
+      <div class="trackpad"></div>
+    </div>
+  </div>
+
+  <div class="silver-phone">
+    <div class="phone-screen">
+      <img src="images/school-sp.png"
+           alt="SAMPLE SCHOOL スマホ版">
+    </div>
+  </div>
+
+</div>
+
+  <div class="work-card-content work-card-marble">
+    <h3>
+  <a href="sample-school/Web.html"
+     target="_blank"
+     rel="noopener noreferrer">
+    クライアントワーク/Webサイト制作 ↗
+  </a>
+</h3>
+        <p>HTML・CSSコーディング/スマートフォン対応</p>
+  </div>
+</div>
+
+</div><!-- website-listの終わり：これを追加 -->
+
+<div class="works-footer">
       <a href="portfolio2.html" class="view-more">VIEW MORE</a>
     </div>
 
@@ -142,11 +184,66 @@
 
     </div>
 
+    </section>
+
+
+  <!-- contact -->
+
+  <section id="contact">
+
+    <div class="section-title">
+      <h2>Contact</h2>
+    </div>
+
+    <div class="contact-container">
+
+      <p class="contact-message">
+        お仕事のご依頼・ご相談など、お気軽にお問い合わせください。
+      </p>
+
+      <form
+  action="https://formspree.io/f/mgaobdzk"
+  method="POST"
+  class="contact-form"
+>
+
+<input
+  type="hidden"
+  name="_next"
+  value="https://ayk-design.github.io/ayka-portfolio/thanks.html"
+>
+
+        <div class="form-group">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">お問い合わせ内容</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="contact-btn">
+          SEND
+        </button>
+
+      </form>
+
+    </div>
+
   </section>
+
 
   <footer>
     © 2026 Portfolio
   </footer>
 
-</body>
-</html>
+  <a href="#" class="back-to-top" aria-label="ページの先頭へ戻る">
+  <span aria-hidden="true">⌃</span>
+  TOP
+</a>
