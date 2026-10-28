@@ -1,0 +1,1107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* =========================
+   header
+========================= */
+
+.header {
+  width: 100%;
+  background: #fff;
+}
+
+.header-inner {
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 220px;
+}
+
+.header-logo img {
+  display: block;
+  width: 100%;
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-nav a {
+  font-size: 14px;
+}
+
+.header-btn {
+  margin-left: 30px;
+  padding: 14px 24px;
+
+  color: #fff;
+  font-size: 14px;
+
+  background: #e85d83;
+  border-radius: 30px;
+}
+
+/* =========================
+   ファーストビュー
+========================= */
+
+/* =========================
+   ファーストビュー
+========================= */
+
+.fv {
+  position: relative;
+  width: 100%;
+  background: #fdf8f8;
+}
+
+.fv img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* FVの上のボタン */
+.fv-btn {
+  position: absolute;
+  left: 27%;
+  bottom: 20px;
+  transform: translateX(-50%);
+
+  width: 300px;
+  padding: 15px 20px;
+
+  background: #e85d83;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+
+  z-index: 10;
+}
+
+.fv-btn:hover {
+  opacity: 0.8;
+}
+
+/* =========================
+   選ばれる理由
+========================= */
+
+.reason {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 30px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #e98ca3;
+  margin: 10px auto 0;
+}
+
+
+/* 3つのカード */
+
+.reason-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.reason-card {
+  width: calc((100% - 60px) / 3);
+  min-height: 220px;
+  padding: 30px 20px;
+
+  background: #fff8fa;
+  text-align: center;
+}
+
+.reason-icon {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 18px;
+}
+
+.reason-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #e98ca3;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.reason-card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.reason-card p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* =========================
+   学習の流れ
+========================= */
+
+.flow {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px 60px;
+}
+
+.flow-list {
+  display: flex;
+  gap: 20px;
+}
+
+.flow-card {
+  position: relative;
+
+  width: calc((100% - 60px) / 4);
+  min-height: 230px;
+
+  padding: 35px 15px 25px;
+
+  border: 1px solid #f1dce1;
+  border-radius: 5px;
+
+  text-align: center;
+  background: #fff;
+}
+
+.flow-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  color: #e98ca3;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.flow-icon {
+  color: #e98ca3;
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.flow-card h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.flow-card p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* =========================
+   コース・料金
+========================= */
+
+.course {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px 70px;
+}
+
+.course-list {
+  display: flex;
+  gap: 25px;
+  align-items: stretch;
+}
+
+
+/* カード */
+
+.course-card {
+  position: relative;
+  width: calc((100% - 50px) / 3);
+  min-height: 430px;
+
+  padding: 35px 25px 25px;
+
+  background: #fff9fa;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+
+/* 真ん中のカード */
+
+.course-card-main {
+  background: #fff;
+  border: 2px solid #f0c8d2;
+}
+
+
+/* 人気No.1 */
+
+.course-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 5px 18px;
+
+  background: #e85c80;
+  color: #fff;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+
+/* 説明 */
+
+.course-target {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+
+/* 料金 */
+
+.course-price {
+  text-align: center;
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.course-price span {
+  font-size: 17px;
+}
+
+.course-price small {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+
+/* 内容 */
+
+.course-detail {
+  font-size: 12px;
+  line-height: 2;
+  margin-bottom: 25px;
+}
+
+
+/* ボタン */
+
+.course-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  width: 100%;
+  height: 45px;
+
+  margin-top: auto;
+
+  background: #e85c80;
+  color: #fff;
+
+  border-radius: 30px;
+
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.course-button span {
+  position: absolute;
+  right: 20px;
+
+  font-size: 22px;
+  font-weight: normal;
+}
+/* コースカード上部を中央揃え */
+.course-card {
+  text-align: center;
+}
+
+.course-card h3,
+.course-target,
+.course-price {
+  text-align: center;
+}
+
+/* 箇条書きだけ左揃え */
+.course-detail {
+  text-align: left;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================
+   受講生の声
+========================= */
+
+.voice {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px 70px;
+}
+
+.voice-list {
+  display: flex;
+  gap: 20px;
+}
+
+.voice-card {
+  width: calc((100% - 40px) / 3);
+  min-height: 170px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+
+  padding: 25px 20px;
+
+  border: 1px solid #f1e4e7;
+  border-radius: 6px;
+
+  background: #fff;
+}
+
+
+/* 丸い写真 */
+
+
+.voice-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.voice-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* 文章 */
+
+.voice-content {
+  flex: 1;
+}
+
+.voice-text {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.voice-name {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* 受講生の声 スライド用ドット */
+.voice-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.voice-dots .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+   cursor: pointer;
+  transition: 0.3s;
+}
+
+.voice-dots .dot.active {
+  background-color: #f05a7e;
+}
+/* =========================
+   よくある質問
+========================= */
+
+.faq {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px 70px;
+}
+
+.faq-list {
+  width: 100%;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  background: #fff7f9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+
+/* 質問部分 */
+
+.faq-item summary {
+  position: relative;
+
+  padding: 18px 55px 18px 25px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  list-style: none;
+}
+
+
+/* ブラウザ標準の三角を消す */
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+
+/* Q */
+
+.faq-q {
+  color: #e85c80;
+  margin-right: 12px;
+}
+
+
+/* ＋ */
+
+.faq-item summary::after {
+  content: "+";
+
+  position: absolute;
+  right: 25px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  font-size: 20px;
+  font-weight: normal;
+  color: #555;
+}
+
+
+/* 開いたら − */
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+
+/* 回答 */
+
+.faq-answer {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  padding: 15px 30px;
+
+  background: #fff;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+  max-width: 1000px;
+  min-height: 230px;
+
+  margin: 0 auto 60px;
+
+  display: flex;
+  align-items: center;
+
+  background: #fff8fa;
+
+  border: 1px solid #f0c8d2;
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.cta-image {
+  width: 35%;
+  align-self: stretch;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 画像の右側をふわっと白にする */
+.cta-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  pointer-events: none;
+}
+
+.cta-content {
+  width: 65%;
+  padding: 35px 40px;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 400px;
+  height: 50px;
+
+  margin: 0 auto;
+
+  color: #fff;
+  background: #e85c80;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cta-button span {
+  position: absolute;
+  right: 25px;
+
+  font-size: 22px;
+  font-weight: normal;
+}
+
+/* =========================
+   footer
+========================= */
+
+.footer {
+  width: 100%;
+  background: #fdf5f5;
+  padding: 50px 0 20px;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 30px 20px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* 左側のロゴ */
+.footer-logo {
+  width: 230px;
+  margin: 0;
+}
+
+.footer-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 右側のメニュー */
+.footer-menu {
+  display: flex;
+  gap: 70px;
+}
+
+
+/* 各メニュー */
+.footer-column {
+  flex: 1;
+  min-width: 110px;
+}
+
+.footer-column h3 {
+  font-size: 14px;
+  margin-bottom: 15px;
+  white-space: nowrap;
+}
+
+.footer-column a {
+  display: block;
+  font-size: 12px;
+  line-height: 2;
+  white-space: nowrap;
+}
+
+/* SNSアイコン */
+.footer-sns {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sns-icon {
+  width: 38px;
+  height: 38px;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #aaa;
+  font-size: 19px;
+}
+
+.sns-icon i {
+  line-height: 1;
+}
+
+.sns-icon:hover {
+  color: #e85b7e;
+  border-color: #e85b7e;
+}
+
+/* コピーライト */
+.copyright {
+  max-width: 1000px;
+  margin: 30px auto 0;
+  padding-top: 15px;
+
+  border-top: 1px solid #eee;
+
+  text-align: center;
+  font-size: 10px;
+  color: #999;
+}
+
+/* =========================
+   TOPボタン
+========================= */
+
+a.top-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+  width: 55px;
+  height: 55px;
+
+  background-color: #e9547b;
+  color: #ffffff;
+
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1.2;
+
+  text-decoration: none;
+
+  z-index: 9999;
+}
+
+a.top-button span {
+  display: block;
+  font-size: 18px;
+  line-height: 14px;
+  margin-bottom: 2px;
+}
+
+.reason-icon {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 20px;
+}
+
+.reason-icon svg {
+  width: 100%;
+  height: 100%;
+
+  fill: none;
+  stroke: #e98ca3;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.flow-icon {
+  width: 38px;
+  height: 38px;
+  margin: 0 auto 18px;
+}
+
+.flow-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #e98ca3;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* =========================
+   ホバー効果
+========================= */
+
+.header-btn,
+.fv-btn,
+.course-button,
+.cta-button,
+.top-button {
+  transition: opacity 0.3s ease;
+}
+
+.header-btn:hover,
+.fv-btn:hover,
+.course-button:hover,
+.cta-button:hover,
+.top-button:hover {
+  opacity: 0.8;
+}
+
+/* =========================
+   スマホ表示
+========================= */
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-inner {
+    height: 60px;
+    padding: 0 15px;
+  }
+
+  .header-logo {
+    width: 150px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-btn {
+    margin-left: auto;
+    padding: 10px 15px;
+    font-size: 11px;
+  }
+  /* 選ばれる理由 */
+  .reason {
+    width: 100%;
+    padding: 50px 20px;
+  }
+
+  .reason-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .reason-card {
+    width: 100%;
+    max-width: 360px;
+    min-height: auto;
+    padding: 25px 20px;
+  }
+
+  .reason-card h3 {
+    font-size: 17px;
+  }
+
+  .reason-card p {
+    font-size: 14px;
+  }
+  /* コース・料金 */
+.course {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.course-list {
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.course-card {
+  width: 100%;
+  max-width: 360px;
+  min-height: auto;
+  padding: 35px 25px;
+}
+
+.course-price {
+  font-size: 27px;
+}
+
+.course-detail {
+  font-size: 13px;
+}
+/* スマホ全体の中央揃え */
+.reason,
+.flow,
+.course,
+.voice,
+.faq {
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 各リストを中央へ */
+.reason-list,
+.flow-list,
+.course-list,
+.voice-list {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+/* 学習の流れ */
+.flow {
+  padding: 40px 20px;
+}
+
+.flow-list {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.flow-card {
+  width: 100%;
+  max-width: 360px;
+  min-height: auto;
+  padding: 35px 20px 25px;
+}
+}
+
+/* スマホ用のレイアウト調整 */
+@media (max-width: 768px) {
+
+  .fv {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .fv img {
+    width: 100%;
+    height: auto;
+  }
+
+  .fv-btn {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    width: 70%;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .reason,
+  .flow,
+  .course,
+  .voice,
+  .faq {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .reason-list,
+  .flow-list,
+  .course-list,
+  .voice-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .reason-card,
+  .flow-card,
+  .course-card,
+  .voice-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .cta {
+    flex-direction: column;
+    margin: 0 20px 40px;
+  }
+
+  .cta-image,
+  .cta-content {
+    width: 100%;
+  }
+
+  .cta-image img {
+    height: auto;
+  }
+
+  .cta-image::after {
+    display: none;
+  }
+
+  .cta-content {
+    padding: 30px 20px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .footer-left {
+    align-items: center;
+  }
+
+  .footer-menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 15px;
+  }
+
+  .footer-column {
+    min-width: 0;
+  }
+
+  .footer-column h3,
+  .footer-column a {
+    white-space: normal;
+  }
+
+  a.top-button {
+    right: 15px;
+    bottom: 15px;
+  }
+}
